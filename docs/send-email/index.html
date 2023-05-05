@@ -182,9 +182,7 @@
 
 <h3 id="example-request">Example request with Curl</h3>
 
-<p>```bash</p>
-
-<p>curl -XPOST -H 'apikey: API_KEY_HERE' -H "Content-type: application/json" -d '{
+<pre><code class="language-bash"><br />curl -XPOST -H 'apikey: API_KEY_HERE' -H "Content-type: application/json" -d '{
     "subject": "My First Email",
     "to": "youremail@youremailapi.com",
     "smtp_account": "a smtp account token",
@@ -192,9 +190,9 @@
     "variables": {
         "%VAR%": "value"
     }
-}' 'https://youremailapi.com/mailer/'</p>
+}' 'https://youremailapi.com/mailer/'
 
-<p>```z|</p>
+</code></pre>
         </div>
     </div>
 </section>
