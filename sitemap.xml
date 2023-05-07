@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/templates</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/templates</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/getting-started</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/getting-started</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/authorization</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/authorization</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/error-codes</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/error-codes</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/send-email</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/send-email</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/smtp-accounts</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000/docs/smtp-accounts</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co</loc>
-  <lastmod>2023-05-07T13:41:08-03:00</lastmod>
+  <loc>http://localhost:3000</loc>
+  <lastmod>2023-05-07T13:42:42-03:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
