@@ -29,7 +29,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i"
         rel="stylesheet">
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=257f156b819defaadf11">
+    <link rel="stylesheet" href="/assets/build/css/main.css">
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     
@@ -216,6 +216,18 @@
   <td>Token of the template with which you want to send the email</td>
 </tr>
 <tr>
+  <td>reply_to</td>
+  <td>No</td>
+  <td>array<string></td>
+  <td>List of emails that can be answered. Example: <code>YourEmailAPI &lt;contact@youremailapi.com&gt;</code></td>
+</tr>
+<tr>
+  <td>bcc</td>
+  <td>No</td>
+  <td>array<string></td>
+  <td>List of emails to which a carbon copy will be sent</td>
+</tr>
+<tr>
   <td>variables</td>
   <td>No</td>
   <td>object&lt;string,any></td>
@@ -242,7 +254,7 @@
 </section>
     </main>
 
-    <script src="/assets/build/js/main.js?id=07c06e86399bc87f6c3c"></script>
+    <script src="/assets/build/js/main.js"></script>
 
     <script>
     const navMenu = {
