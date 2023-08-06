@@ -171,6 +171,45 @@
     </li>
             <li class="pl-4">
             
+        <a href="/docs/attachments/getting-started"
+            class="lvl0   nav-menu__item hover:text-blue-500"
+        >
+            Attachments
+        </a>
+    
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="/docs/attachments/upload"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Upload
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/attachments/get-uploaded-files"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Get
+        </a>
+    
+    </li>
+            <li class="pl-4">
+            
+        <a href="/docs/attachments/delete"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Delete
+        </a>
+    
+    </li>
+    </ul>
+    </li>
+            <li class="pl-4">
+            
         <a href="/docs/libraries/getting-started"
             class="lvl0   nav-menu__item hover:text-blue-500"
         >
@@ -272,6 +311,12 @@
   <td>object&lt;string,any></td>
   <td>In the event that your <a href="/docs/templates#template-variables">template has variables</a>, you can replace them in this section</td>
 </tr>
+<tr>
+  <td>attachments</td>
+  <td>No</td>
+  <td>array<string></td>
+  <td>Array of tokens related to previously uploaded files. <a href="/docs/attachments/getting-started">See attachments</a> for instructions</td>
+</tr>
 </tbody>
 </table>
 
@@ -285,6 +330,10 @@
     "variables": {
         "%VAR%": "value"
     }
+    "attachments": [
+        "c1798e9220511634267073e1f118796214ad39a94ae4a85699b2fdb95fe482ce",
+        "69ca3ae3c06a9afce511698500710a46c187368abd05e0b20c7e50a77f6ab5a2"
+    ]
 }' 'https://api.youremailapi.com/mailer/'
 
 </code></pre>

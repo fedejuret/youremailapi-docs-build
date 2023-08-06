@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Start with Javascript YouremailAPI Library">
+    <meta name="description" content="Get the files you have uploaded to our server">
 
     <meta property="og:site_name" content="Youremail API" />
-    <meta property="og:title" content="Javascript Library | Youremail API" />
-    <meta property="og:description" content="Start with Javascript YouremailAPI Library" />
-    <meta property="og:url" content="https://docs.youremailapi.com/docs/libraries/javascript" />
+    <meta property="og:title" content="Attachments - My Files | Youremail API" />
+    <meta property="og:description" content="Get the files you have uploaded to our server" />
+    <meta property="og:url" content="https://docs.youremailapi.com/docs/attachments/get-uploaded-files" />
     <meta property="og:image" content="/assets/img/logo.png" />
     <meta property="og:type" content="website" />
 
@@ -19,7 +19,7 @@
 
             <meta name="generator" content="tighten_jigsaw_doc">
     
-    <title>Youremail API | Javascript Library</title>
+    <title>Youremail API | Attachments - My Files</title>
 
     <link rel="home" href="https://docs.youremailapi.com">
     <link rel="icon" href="/favicon.ico">
@@ -172,7 +172,7 @@
             <li class="pl-4">
             
         <a href="/docs/attachments/getting-started"
-            class="lvl0   nav-menu__item hover:text-blue-500"
+            class="lvl0 lvl0-active  nav-menu__item hover:text-blue-500"
         >
             Attachments
         </a>
@@ -191,7 +191,7 @@
             <li class="pl-4">
             
         <a href="/docs/attachments/get-uploaded-files"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
         >
             Get
         </a>
@@ -211,7 +211,7 @@
             <li class="pl-4">
             
         <a href="/docs/libraries/getting-started"
-            class="lvl0 lvl0-active  nav-menu__item hover:text-blue-500"
+            class="lvl0   nav-menu__item hover:text-blue-500"
         >
             Libraries
         </a>
@@ -221,7 +221,7 @@
             <li class="pl-4">
             
         <a href="/docs/libraries/javascript"
-            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Javascript
         </a>
@@ -251,26 +251,42 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h2 id="javascript">Install the package</h2>
+            <h1 id="get-uploaded-files">Get my uploaded files</h1>
 
-<pre><code class="language-text">npm i youremailapi
+<p>At any time you can check what files you have uploaded on our server. This will be useful if you want to resend an email with an already uploaded attachment, or if you want to remove the attachments from our server.</p>
+
+<p>Simply what you have to do is a request of type get as in the example below</p>
+
+<pre><code class="language-bash">curl --location 'https://api.youremailapi.com/files' \
+--header 'apikey: {YOUR_API_KEY_HERE}'
 </code></pre>
 
-<h2>Start using it</h2>
+<h2>Response</h2>
 
-<p>How to send an email:</p>
+<p>If you have files on our server, the response will have the following structure.
+Inside the "files" array you will find all the files you have uploaded. And inside the meta object, there is the calculation of how many bytes all those files weigh</p>
 
-<pre><code class="language-js">const { sendEmail } = require("youremailapi"); // you can use import instead
-
-await sendEmail("&lt;YOUR_API_KEY&gt;", {
-  to: "contact@youremailapi.com",
-  template: "&lt;YOUR_TEMPLATE&gt;",
-  smtp_account: "&lt;YOUR_SMTP_ACCOUNT&gt;",
-  subject: "Some subject",
-  variables: {
-    "%example%": "Some text here",
-  },
-});
+<pre><code class="language-json">{
+  "files": [
+    {
+      "id": 2,
+      "token": "c1798e9220511634267073e1f118796214ad39a94ae4a85699b2fdb95fe482ce",
+      "size": 337554,
+      "name": "c1798e9220511634267073e1f118796214ad39a94ae4a85699b2fdb95fe482ce.gif",
+      "created_at": "2023-08-07T01:21:16.226Z"
+    },
+    {
+      "id": 3,
+      "token": "69ca3ae3c06a9afce511698500710a46c187368abd05e0b20c7e50a77f6ab5a2",
+      "size": 553443,
+      "name": "69ca3ae3c06a9afce511698500710a46c187368abd05e0b20c7e50a77f6ab5a2.gif",
+      "created_at": "2023-08-07T01:21:16.235Z"
+    }
+  ],
+  "meta": {
+    "total_bytes": 890997
+  }
+}
 </code></pre>
         </div>
     </div>
