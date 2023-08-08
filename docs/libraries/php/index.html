@@ -29,7 +29,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i"
         rel="stylesheet">
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=c5a8254cb05470071c37">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=257f156b819defaadf11">
 
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     
@@ -260,13 +260,13 @@
 
 <p>How to send an email:</p>
 
-<pre><code class="language-php">use Youremailapi\PhpSdk\DataTransferObjects\Email\SendRequestDTO;
-use Youremailapi\PhpSdk\Email\SendRequest;
+<pre><code class="language-php">use Youremailapi\PhpSdk\DataTransferObjects\Email\SendEmailDTO;
+use Youremailapi\PhpSdk\Email\SendEmail;
 
-$sendEmail = new SendRequest('&lt;YOUR API KEY&gt;');
+$sendEmail = new SendEmail('&lt;YOUR API KEY&gt;');
 
 $sendEmail-&gt;send(
-    (new SendRequestDTO())
+    (new SendEmailDTO())
         -&gt;setTo('contact@youremailapi.com')
         -&gt;setVariables([
             '%example%' =&gt; 'Some text here'
